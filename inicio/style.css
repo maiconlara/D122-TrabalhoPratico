@@ -1,0 +1,232 @@
+/**{
+
+    636573
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+} */
+
+body{
+   background-color: #c4c4c4;  
+
+}
+
+.tudo{
+    min-height: calc(100vh - 80px);
+}
+
+li, a, button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header{
+    box-sizing: border-box;
+    background-color: #24252A;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    width: 128px;
+    height: 17px;
+}
+
+#nav-link{
+    list-style: none;
+}
+
+#nav-link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#nav-link li a {
+   transition: all 0.3s ease 0s;
+}
+
+#nav-link li a:hover {
+    color: #0088a9;
+ }
+
+#logout-button{ 
+    margin-left: 10px;
+    padding: 9px 25px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#logout-button:hover {
+    color: #0088a9;
+ }
+
+#contact-button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#contact-button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+
+#slider{
+    overflow: hidden;
+    max-width: 1600px;
+    width: 100%;
+    max-height: 490px;
+    height: 100%;
+}
+
+#slider figure {
+    
+ position: relative;
+ width: 500%;
+ margin: 0;
+ left: 0;
+ animation: 20s slider infinite;
+}
+
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+
+    20%{
+        left: 0;
+    }
+
+    25%{
+        left: -100%;
+    }
+
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left:-300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+
+
+.sobre{
+background-color: #aba9a9;
+margin-top: 5.5%;
+margin-bottom: -15px;
+margin-left: -8px;
+margin-right: -8px;
+display: flex;
+align-items: center;
+padding: 30px 10%;
+text-align: center;
+}
+
+.sobre-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.sobre-text h1{
+font-variant:small-caps  
+}
+
+.sobre-text p{
+text-align: justify;
+margin-top: 0px;
+}
+
+.fachadaloja{
+    float: left;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    max-width: 512px;
+    max-height: 341px;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.sobre-content{
+    margin-top: 50px;
+}
+
+footer{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    background-color: #24252A;
+    color: #fff;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+}
+
+
+#slogan{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: center;
+   color: #24252A;
+}
+
+#conta-options{
+    list-style: none;
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em;
+    background: #24252A;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+    position: absolute;
+    top: 3em;
+    opacity: 1;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+#conta-options li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background: #303035;
+}
+
+
+#conta-options li a:hover{
+    color: #0088a9;
+    transition: all 0.3s ease 0s;
+}
