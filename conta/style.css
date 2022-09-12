@@ -1,0 +1,296 @@
+body{
+    background-color: #c4c4c4;  
+ 
+ }
+ 
+ .tudo{
+     min-height: calc(100vh - 80px);
+ }
+ 
+ li, a, button{
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     color: #ecf0f1;
+     text-decoration: none;
+ }
+ 
+ header{
+     box-sizing: border-box;
+     background-color: #24252A;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 20px 10%;
+     margin-top: -15px;
+     margin-left: -8px;
+     margin-right: -8px;
+ }
+ 
+ .logo{
+     cursor: pointer;
+     margin-right: auto;
+     width: 128px;
+     height: 17px;
+ }
+ 
+ #nav-link{
+     list-style: none;
+ }
+ 
+ #nav-link li{
+     display: inline-block;
+     padding: 0px 20px;
+ }
+ 
+ #nav-link li a {
+    transition: all 0.3s ease 0s;
+ }
+ 
+ #nav-link li a:hover {
+     color: #0088a9;
+  }
+ 
+  #logout-button{ 
+    margin-left: 10px;
+    padding: 9px 25px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#logout-button:hover {
+    color: #0088a9;
+ }
+
+ #contact-button{
+     padding: 9px 25px;
+     background-color: rgba(0,136,169,1);
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+ }
+ 
+ #contact-button:hover{
+     background-color: rgba(0,136,169,0.8);
+ }
+ 
+ 
+ 
+ h1{
+    font-variant:small-caps  ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+ .account-content{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    align-items: center;
+    position: flex;
+ }
+
+ #list-dados{
+    list-style: none;
+ }
+
+
+ #list-dados li{
+    margin: 20px;
+    margin-left: -15%;
+ }
+
+ .account-content a{
+    color: #24252A;
+ }
+
+ .account-content a:hover{
+    color: #0088a9;
+ }
+
+.account-text p{
+   font-size: clamp(6px, 1vw, 16px);
+}
+.account-title{
+    align-items: center;
+    text-align: center;
+}
+ 
+
+#conta-options{
+    list-style: none;
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em;
+    background: #24252A;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+    position: absolute;
+    top: 3em;
+    opacity: 1;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+#conta-options li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background: #303035;
+}
+
+
+#conta-options li a:hover{
+    color: #0088a9;
+    transition: all 0.3s ease 0s;
+}
+
+  .login-box {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: 600;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      width: 400px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: transparent;
+      box-sizing: border-box;
+
+    }
+    .login-box .user-box {
+      position: relative;
+    }
+    
+    .login-box .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #24252A;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #24252A;
+      outline: none;
+      background: transparent;
+    }
+    .login-box .user-box label {
+      position: absolute;
+      top:0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      pointer-events: none;
+      transition: .5s;
+    }
+    
+    .login-box .user-box input:focus ~ label,
+    .login-box .user-box input:valid ~ label,
+    .login-box .user-box input:invalid ~ label,
+    .login-box .user-box input:read-only ~ label {
+      top: -20px;
+      left: 0;
+      color: #24252A;
+      font-size: 12px;
+    }
+    
+    
+    .registrar{
+      color: #24252A !important;
+      background-color: transparent !important;
+      border: none;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      font-size: 16px;
+      letter-spacing: 4px
+    }
+    
+    .registrar:hover{
+      color: #0088a9 !important;
+    } 
+    
+    .login-box form a{
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      margin-top: 40px;
+      letter-spacing: 4px;
+        margin-left: -20px;
+    }
+
+
+    #del-btn{
+      margin-top: 16px;
+    }
+
+.delete-modal{
+display: none;
+align-items: center;
+font-weight: 400;
+position: absolute;
+top: 30%;
+left: 50%;
+width: 400px;
+padding-top: 0px;
+padding-bottom: 40px;
+padding-left: 40px;
+padding-right: 40px;
+
+transform: translate(-50%, -50%);
+background: #24252A;
+
+box-sizing: border-box;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  }
+
+.delete-modal h1{
+   font-variant: small-caps;
+   color: #ecf0f1;
+
+  }
+
+  
+.delete-modal p{
+
+  color: #ecf0f1;
+
+ }
+
+ .modal-btn{
+  cursor: pointer;
+  padding-top: 25px;
+  color: #ecf0f1;
+  background-color: transparent !important;
+  border: none;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  font-size: 16px;
+  letter-spacing: 4px
+}
+
+.modal-btn:hover{
+  color: #0088a9;
+}
